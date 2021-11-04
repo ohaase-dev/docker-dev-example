@@ -31,7 +31,7 @@ RUN export LATEST_COMPOSE_VERSION=$(curl -sSL "https://api.github.com/repos/dock
 # [Optional] Uncomment if you want to install more global node packages
 # RUN npm install -g yarn
 
-# Copy the full repository into the /workspace directory
+# Copy the full repository into the /workspaces directory
 # This will then get mounted into the shared app volume
-WORKDIR /workspace
+WORKDIR /workspaces
 COPY . .
