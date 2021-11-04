@@ -10,7 +10,7 @@ services:
       # Forwards the local Docker socket to the container.
       - /var/run/docker.sock:/var/run/docker.sock
       # Use a named volume for the source code
-      - my-app:/workspace
+      - my-app:/workspaces
       # Persist VS Code extensions between rebuilds
       - vscode-extensions:/root/.vscode-server/extensions
       # And/or for VS Code Insiders
